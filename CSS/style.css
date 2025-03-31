@@ -1,0 +1,109 @@
+/* Couleurs principales */
+:root {
+    --bg-dark: #1e1b1f;
+    --bg-sidebar: #1a171b;
+    --text-color: #f1f1f1;
+    --chat-bg: #2a252e;
+    --input-bg: #3a303d;
+    --accent: #d93b8c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 70px;
+    background-color: var(--bg-sidebar);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.server-list li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.server-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+}
+
+/* Channel List */
+.channel-list {
+    width: 220px;
+    background-color: var(--bg-sidebar);
+    padding: 15px;
+}
+
+/* Chat */
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--chat-bg);
+    padding: 10px;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: var(--bg-sidebar);
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+/* Input */
+.chat-input {
+    padding: 10px;
+    background-color: var(--bg-sidebar);
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--input-bg);
+    border: none;
+    color: var(--text-color);
+}
+
+/* Members List */
+.members-list {
+    width: 200px;
+    background-color: var(--bg-sidebar);
+    padding: 15px;
+}
